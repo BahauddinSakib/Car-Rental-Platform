@@ -9,9 +9,9 @@ function Navbar({ setShowLogin }) {
 
   return (
     <div
-      className={`flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 text-gray-600
-      border-b border-borderColor relative transition-all
-      ${location.pathname === '/' && 'bg-light'}`}
+      className={`sticky top-0 z-50 flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-4 text-gray-600
+        border-b border-borderColor relative transition-all
+        ${location.pathname === '/' ? 'bg-light bg-opacity-100' : 'bg-white'}`}
     >
       {/* Logo */}
       <Link to='/'>
@@ -21,15 +21,19 @@ function Navbar({ setShowLogin }) {
       {/* Menu links */}
       <div
         className={`max-sm:fixed max-sm:h-screen max-sm:w-full max-sm:top-16
-        max-sm:border-t border-borderColor right-0 flex flex-col sm:flex-row
-        items-start sm:items-center gap-4 sm:gap-8 max-sm:p-4 transition-all
-        duration-300 z-50 ${location.pathname === '/' ? 'bg-light' : 'bg-white'}
-        ${open ? 'max-sm:translate-x-0' : 'max-sm:translate-x-full'}`}
+          max-sm:border-t border-borderColor right-0 flex flex-col sm:flex-row
+          items-start sm:items-center gap-4 sm:gap-8 max-sm:p-4 transition-all
+          duration-300 z-50 ${location.pathname === '/' ? 'bg-light bg-opacity-100' : 'bg-white'}
+          ${open ? 'max-sm:translate-x-0' : 'max-sm:translate-x-full'}`}
       >
         {menuLinks.map((link, index) => (
-          <Link key={index} to={link.path}>
-            {link.name}
-          </Link>
+           <Link
+           key={index}
+           to={link.path}
+           className='hover:underline hover:decoration-2 hover:decoration-black transition-all'
+         >
+           {link.name}
+         </Link>
         ))}
 
         {/* Search Box */}
