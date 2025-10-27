@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import logo1 from "./logo1.png";
 import gmail_logo from "./gmail_logo.svg";
 import facebook_logo from "./facebook_logo.svg";
 import instagram_logo from "./instagram_logo.svg";
@@ -38,6 +39,8 @@ import banner_car_image from "./banner_car_image.png"
 import banner_car_image2 from "./banner_car_image2.png"
 import user_profile from "./user_profile.png"
 import upload_icon from "./upload_icon.svg"
+import car_image6 from "./car_image6.png"
+import car_image7 from "./car_image7.png"
 import car_image0 from "./car_image0.png"
 import car_image1 from "./car_image1.png"
 import car_image2 from "./car_image2.png"
@@ -49,6 +52,7 @@ export const cityList = ['New York', 'Los Angeles', 'Houston', 'Chicago']
 
 export const assets = {
     logo,
+    logo1,
     gmail_logo,
     facebook_logo,
     instagram_logo,
@@ -86,6 +90,8 @@ export const assets = {
     main_car2,
     banner_car_image,
     banner_car_image2,
+    car_image6,
+    car_image7,
     car_image0,
     car_image1,
     upload_icon,
@@ -94,6 +100,7 @@ export const assets = {
     car_image3,
     car_image4,
     car_image5
+    
 }
 
 export const menuLinks = [
@@ -119,10 +126,45 @@ export const dummyUserData = {
 
 export const dummyCarData = [
     {
+        "_id": "67ff6b758f1b3684286a2a70",  
+        "owner": "67fe3467ed8a8fe17d0ba6e5", 
+        "brand": "Tesla",
+        "model": "Model S Plaid",
+        "image": car_image6, 
+        "year": 2025,
+        "category": "Sedan",
+        "seating_capacity": 5,
+        "fuel_type": "Electric",
+        "transmission": "Automatic",
+        "pricePerDay": 650,
+        "location": "Los Angeles",
+        "description": "The 2025 Tesla Model S Plaid is an all-electric luxury sedan offering incredible acceleration, advanced autopilot features, and a cutting-edge infotainment system. With a sleek design and premium interior, it delivers both performance and comfort for a futuristic driving experience.",
+        "isAvaliable": true,
+        "createdAt": "2025-10-27T12:00:00.000Z"
+      },
+      {
+        "_id": "67ff6b758f1b3684286a2a71",  
+        "owner": "67fe3467ed8a8fe17d0ba6e6", 
+        "brand": "Ford",
+        "model": "Mustang GT 2025",
+        "image": car_image7, 
+        "year": 2025,
+        "category": "Sports",
+        "seating_capacity": 4,
+        "fuel_type": "Petrol",
+        "transmission": "Manual",
+        "pricePerDay": 580,
+        "location": "New York",
+        "description": "The 2025 Ford Mustang GT is a high-performance sports car combining classic Mustang style with modern technology. It offers thrilling acceleration, precise handling, and a driver-focused interior for an exhilarating ride.",
+        "isAvaliable": true,
+        "createdAt": "2025-10-27T12:30:00.000Z"
+      },      
+      
+    {
         "_id": "67ff6b758f1b3684286a2a67",
         "owner": "67fe3467ed8a8fe17d0ba6e3",
         "brand": "Land Rover",
-        "model": "Range Rover Black Edition",
+        "model": "Range Rover",
         "image": car_image0,
         "year": 2024,
         "category": "SUV",
@@ -131,7 +173,7 @@ export const dummyCarData = [
         "transmission": "Automatic",
         "pricePerDay": 550,
         "location": "New York",
-        "description": "The 2024 Range Rover Black Edition is a luxury SUV that combines power, elegance, and technology. Featuring a refined black exterior, panoramic roof, adaptive suspension, and an advanced infotainment system, it delivers unmatched comfort and performance on any terrain.",
+        "description": "The 2024 Range Rover  is a luxury SUV that combines power, elegance, and technology. Featuring a refined black exterior, panoramic roof, adaptive suspension, and an advanced infotainment system, it delivers unmatched comfort and performance on any terrain.",
         "isAvaliable": true,
         "createdAt": "2025-04-19T09:10:35.215Z"
       },      

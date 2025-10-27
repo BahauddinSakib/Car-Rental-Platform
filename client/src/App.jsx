@@ -24,7 +24,7 @@ function App() {
        </Routes>
 
        {/*Used for footer to show all page except admin dashboard */}
-       {!isOwnerPath && <Footer/>}
+       {!isOwnerPath && <div className="mt-30"><Footer/></div>}
 
        
     </>
